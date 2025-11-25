@@ -11,7 +11,8 @@ def FULL_COLOR():
                         for Letter3 in range(len(sp_color)):
                             Full_combinations.append(
                                 '#' + sp_color[Number1] + sp_color[Letter1] + sp_color[Number2] + sp_color[Letter2] +
-                                sp_color[Number3] + sp_color[Letter3])
+                                sp_color[Number3] + sp_color[Letter3]
+                            )
     return Full_combinations
 def Teplote_colro(R=100):
     import Color_Change as c
@@ -352,7 +353,7 @@ def Color_Sequence_n(color,ColCh=9,Smooth=10,type=1,dark=0):
 
     Mn = A + B + C
 
-    dark = Mn / 3
+    dark = Mn // 3
 
     Returne = Color_Sequence(color,ColCh=ColCh,Smooth=Smooth,type=1,dark=dark)
     return Returne
