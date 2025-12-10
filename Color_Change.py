@@ -266,6 +266,7 @@ def CCh_list(c1,c2,Repeat=20):
     Value = Mf[Step]
 
     return Mf
+
 def CCh_list_h(c1,c2,Repeat=20):
     Ms = Co_Ch(c1,c2)
     #print(Ms)
@@ -423,6 +424,11 @@ def Lite_or_Dark(color,lux=10,Smooth=10,type=1):
             L . append( Lite_or_Dark(color,lux=luX,Smooth=Smooth,type=1) )
         return L
 
+def Light_or_Dark(color,lux=10,Smooth=10,type=1): # нормальное название
+    Lite_or_Dark(color, lux, Smooth, type)
+    
+def Color_n(color:str): # это довольно важный (можно сказать чуть ли не обязательный пункт), т. к. библиотека расчитана на маленькие буквы (без #00FF00, а #00ff00)
+    return color.lower()
 
 def iUKHFDGKUHkhKkuuUyYIOouiUI():
 
